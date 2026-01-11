@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9975F3412F1009A100A5600A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9975F3332F1009A100A5600A /* Assets.xcassets */; };
+		9975F3422F1009A100A5600A /* rightnoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3342F1009A100A5600A /* rightnoteApp.swift */; };
+		9975F3572F1013A300A5600A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3552F1013A300A5600A /* Note.swift */; };
+		9975F3582F1013A300A5600A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3542F1013A300A5600A /* Item.swift */; };
+		9975F35B2F1013A600A5600A /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3592F1013A600A5600A /* NotesViewModel.swift */; };
+		9975F35E2F1013A900A5600A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F35C2F1013A900A5600A /* ContentView.swift */; };
+		9982695A2F136A41006FE6EC /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998269592F136A36006FE6EC /* NoteDetailView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9983C92A2F0EB1B100F719AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +34,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9975F3332F1009A100A5600A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9975F3342F1009A100A5600A /* rightnoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightnoteApp.swift; sourceTree = "<group>"; };
+		9975F3542F1013A300A5600A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9975F3552F1013A300A5600A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		9975F3592F1013A600A5600A /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		9975F35C2F1013A900A5600A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		998269592F136A36006FE6EC /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		9983C91A2F0EB1B000F719AB /* rightnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rightnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9983C9292F0EB1B100F719AB /* rightnoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rightnoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9983C9332F0EB1B100F719AB /* rightnoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rightnoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9983C91C2F0EB1B000F719AB /* rightnote */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = rightnote;
-			sourceTree = "<group>";
-		};
 		9983C92C2F0EB1B100F719AB /* rightnoteTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = rightnoteTests;
@@ -43,6 +55,11 @@
 		9983C9362F0EB1B100F719AB /* rightnoteUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = rightnoteUITests;
+			sourceTree = "<group>";
+		};
+		9983C9572F0EB60100F719AB /* rightnote */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = rightnote;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -72,12 +89,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9975F35F2F10149C00A5600A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3542F1013A300A5600A /* Item.swift */,
+				9975F3552F1013A300A5600A /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9975F3602F1014FC00A5600A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3592F1013A600A5600A /* NotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9975F3612F10152100A5600A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				998269592F136A36006FE6EC /* NoteDetailView.swift */,
+				9975F35C2F1013A900A5600A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9975F3622F10153700A5600A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3332F1009A100A5600A /* Assets.xcassets */,
+				9975F3342F1009A100A5600A /* rightnoteApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9983C9112F0EB1B000F719AB = {
 			isa = PBXGroup;
 			children = (
-				9983C91C2F0EB1B000F719AB /* rightnote */,
+				9975F3622F10153700A5600A /* App */,
+				9975F3612F10152100A5600A /* Views */,
+				9975F3602F1014FC00A5600A /* ViewModels */,
+				9975F35F2F10149C00A5600A /* Models */,
 				9983C92C2F0EB1B100F719AB /* rightnoteTests */,
 				9983C9362F0EB1B100F719AB /* rightnoteUITests */,
+				9983C9572F0EB60100F719AB /* rightnote */,
 				9983C91B2F0EB1B000F719AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,9 +162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9983C91C2F0EB1B000F719AB /* rightnote */,
 			);
 			name = rightnote;
 			packageProductDependencies = (
@@ -155,6 +208,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9983C9362F0EB1B100F719AB /* rightnoteUITests */,
+				9983C9572F0EB60100F719AB /* rightnote */,
 			);
 			name = rightnoteUITests;
 			packageProductDependencies = (
@@ -212,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9975F3412F1009A100A5600A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9975F3422F1009A100A5600A /* rightnoteApp.swift in Sources */,
+				9975F35B2F1013A600A5600A /* NotesViewModel.swift in Sources */,
+				9975F35E2F1013A900A5600A /* ContentView.swift in Sources */,
+				9982695A2F136A41006FE6EC /* NoteDetailView.swift in Sources */,
+				9975F3582F1013A300A5600A /* Item.swift in Sources */,
+				9975F3572F1013A300A5600A /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,10 @@ import SwiftData
 
 @main
 struct rightnoteApp: App {
+    // code for initializing swiftData(sqlite)
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self,Note.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +26,7 @@ struct rightnoteApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(modelContext:sharedModelContainer.mainContext)
         }
         .modelContainer(sharedModelContainer)
     }
