@@ -24,10 +24,17 @@ struct rightnoteApp: App {
         }
     }()
 
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView(modelContext:sharedModelContainer.mainContext)
+//        }
+//        .modelContainer(sharedModelContainer)
+//    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(modelContext:sharedModelContainer.mainContext)
+    PostsView()
         }
-        .modelContainer(sharedModelContainer)
+        //.modelContainer(sharedModelContainer)
     }
 }
